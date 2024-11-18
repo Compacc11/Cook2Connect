@@ -1,0 +1,71 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Styling for the landing page container */
+.landing-page {
+  background-image: url('images/background.png'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  /* Transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+}
+
+/* Content box styling */
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Button styling */
+.get-started-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #f5a623;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #e0951d; /* Darker shade on hover */
+}

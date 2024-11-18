@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="landin.html"> <!-- Replace with your desired link -->
+        <h1>COOK TO Connect</h1>
+      </a>
+    </div>
+    <nav class="navbar">
+      <a href="landin.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="category-dropdown">
+    <label for="category-select">Choose a category:</label>
+    <select id="category-select" onchange="filterRecipes()">
+      <option value="all">All</option>
+      <option value="main-course">Dish</option>
+      <option value="snack">Snacks</option>
+      <option value="dessert">Desserts</option>
+    </select>
+  </div>
+
+  <section class="featured-recipes">
+    <div class="recipe-card" data-category="main-course">
+      <img src="images/recipe1.jpg" alt="Recipe 1">
+      <h3>ADOBO</h3>
+      <p>Try this savory Filipino dish made with pork or chicken simmered in soy sauce, vinegar, garlic, and spices.</p>
+      <a href="recipe1.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="main-course">
+      <img src="images/sisig.jpg" alt="Recipe 1">
+      <h3>SISIG</h3>
+      <p>This popular Filipino dish made from sizzling chopped pork, seasoned with onions, chili, and citrus, served hot and crispy.</p>
+      <a href="sisig.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="main-course">
+      <img src="images/bicol.png" alt="Recipe 1">
+      <h3>BICOL EXPRESS</h3>
+      <p>A spicy, creamy stew from the Bicol region, made with pork, coconut milk, shrimp paste, and fiery chili peppers.</p>
+      <a href="bicol.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="snack">
+      <img src="images/pancit.jpg" alt="Recipe 2">
+      <h3>PANCIT</h3>
+      <p>A delicious Filipino noodle dish made with chicken, pork, shrimp, and a savory sauce.</p>
+      <a href="pancit.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="dessert">
+      <img src="images/lecheg.png" alt="Recipe 3">
+      <h3>LECHE FLAN</h3>
+      <p>A creamy caramel custard dessert that's a popular treat in the Philippines.</p>
+      <a href="leche.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="dessert">
+      <img src="images/halo.png" alt="Recipe 3">
+      <h3>HALO-HALO</h3>
+      <p>A creamy caramel custard dessert that's a popular treat in the Philippines.</p>
+      <a href="halo.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="snack">
+      <img src="images/kwek.png" alt="Recipe 2">
+      <h3>KWEK-KWEK</h3>
+      <p>A delicious Filipino noodle dish made with chicken, pork, shrimp, and a savory sauce.</p>
+      <a href="kwek.html" class="btn-recipe">See full recipe</a>
+    </div>
+    
+    <div class="recipe-card" data-category="main-course">
+      <img src="images/SINIGANG.png" alt="Recipe 1">
+      <h3>SINIGANG</h3>
+      <p>Sinigang is known for its refreshing and appetizing sourness, balanced by the savory broth and the natural sweetness of the vegetables.</p>
+      <a href="sinigang.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="main-course">
+      <img src="images/kare-kare.png" alt="Recipe 3">
+      <h3>KARE-KARE</h3>
+      <p>Kare-Kare is a rich, creamy dish with a nutty peanut sauce.</p>
+      <a href="kare-kare.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="snack">
+      <img src="images/bananacue.png" alt="Recipe 2">
+      <h3>BANANACUE</h3>
+      <p>Banana Cue offers a delightful blend of textures, with a crunchy caramelized sugar coating and a tender, sweet, slightly tangy banana inside.</p>
+      <a href="bananacue.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="snack">
+      <img src="images/TURON.png" alt="Recipe 2">
+      <h3>TURON</h3>
+      <p>Offers a crispy shell with a soft, sweet banana and jackfruit filling.</p>
+      <a href="turon.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="snack">
+      <img src="images/bilo-bilo.png" alt="Recipe 2">
+      <h3>BILO-BILO</h3>
+      <p>Dessert with rice balls in sweet coconut milk, often including sweet potatoes, bananas, and jackfruit.</p>
+      <a href="turon.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <div class="recipe-card" data-category="dessert">
+      <img src="images/maja.png" alt="Recipe 3">
+      <h3>MAJA BLANCA</h3>
+      <p>A creamy coconut milk dessert topped with sweet corn and toasted rice flakes.
+      </p>
+      <a href="maja.html" class="btn-recipe">See full recipe</a>
+    </div>
+     
+    <div class="recipe-card" data-category="dessert">
+      <img src="images/bukopandan.png" alt="Recipe 3">
+      <h3>BUKO PANDAN</h3>
+      <p>Buko Pandan is a refreshing Filipino dessert made with young coconut (buko), pandan-flavored jelly, and sweetened cream.</p>
+      <a href="bukopandan.html" class="btn-recipe">See full recipe</a>
+    </div>
+    
+    <div class="recipe-card" data-category="dessert">
+      <img src="images/graham.png" alt="Recipe 3">
+      <h3>GRAHAM CAKE</h3>
+      <p>Dessert made with layers of graham crackers, whipped cream, condensed milk, and mangoes</p>
+      <a href="graham.html" class="btn-recipe">See full recipe</a>
+    </div>
+
+    <!-- Add more recipe cards as needed -->
+  </section>
+
+  <footer>
+      <p>&copy; 2024 DIGICOOK. All Rights Reserved.</p>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="contact.html">Credits</a>
+      </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

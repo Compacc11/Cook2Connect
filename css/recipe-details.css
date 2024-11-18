@@ -1,0 +1,138 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f5a623;
+}
+
+/* Recipe details section */
+.recipe-details {
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* Text content styling */
+.text-content {
+  flex: 1;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.recipe-details h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f5a623;
+  padding-bottom: 5px;
+}
+
+.recipe-details ul, .recipe-details ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.recipe-details ul li, .recipe-details ol li {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.recipe-details ol li {
+  list-style-type: decimal;
+}
+
+.recipe-details ul li {
+  list-style-type: disc;
+}
+
+/* Image styling */
+.recipe-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+  animation-delay: 0.4s;
+  transition: transform 0.3s ease;
+}
+
+.recipe-image:hover {
+  transform: scale(1.03);
+}
+
+/* Minimal fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .recipe-details {
+    flex-direction: column;
+  }
+
+  .recipe-image {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .recipe-details {
+    padding: 15px;
+  }
+}
